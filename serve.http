@@ -4,6 +4,16 @@ GET {{baseURL}}/opening
 
 ###
 POST {{baseURL}}/opening
+Content-Type: application/json
+
+{
+    "role":"Senior da vida com Go",
+    "company":"Ultrasoft",
+    "location":"new york",
+    "remote":true,
+    "link":"vaga.com",
+    "salary":522000
+}
 
 ###
 DELETE {{baseURL}}/opening
