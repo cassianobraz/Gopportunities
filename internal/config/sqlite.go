@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/cassianobraz/Gopportunities/internal/schemas"
-	"gorm.io/driver/sqlite"
+	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"
 )
 
