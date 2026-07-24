@@ -15,10 +15,10 @@ import (
 // @Tags Openings
 // @Accept json
 // @Produce json
-// @Param request body DeleteOpeningRequest true "request body"
+// @Param id query string true "opening identification"
 // @Success 200 {object} DeleteOpeningResponse
 // @Failure 400 {object} ErrorResponse
-// @Failure 500 {object} ErrorResponse
+// @Failure 404 {object} ErrorResponse
 // @Router /opening [delete]
 func DeleteOpeningHandler(ctx *gin.Context) {
 	id := ctx.Query("id")
