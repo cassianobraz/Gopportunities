@@ -1,25 +1,31 @@
 @baseURL = http://localhost:8080/api/v1
 
-GET {{baseURL}}/opening
+GET {{baseURL}}/opening?id=3
 
 ###
 POST {{baseURL}}/opening
 Content-Type: application/json
 
 {
-    "role":"Senior da vida com Go",
-    "company":"Ultrasoft",
-    "location":"new york",
+    "role":"{text}",
+    "company":"{text}",
+    "location":"{text}",
     "remote":true,
-    "link":"vaga.com",
-    "salary":522000
+    "link":"{text}",
+    "salary":5000
 }
 
 ###
-DELETE {{baseURL}}/opening
+DELETE {{baseURL}}/opening?id={id}
 
 ###
-PUT {{baseURL}}/opening
+PUT {{baseURL}}/opening?id={id}
+Content-Type: application/json
+
+{
+    "role":"{text}",
+    "company":"{text}"
+}
 
 ###
 GET {{baseURL}}/openings
